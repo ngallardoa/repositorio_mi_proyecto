@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cardo', serif;
+    text-align: center;
+}
+
+.tamaño1{
+    font-size: 75%;
+}
+/*Estilo de header*/
+
+.grid-header-index{
+    min-height: 120px;
+    max-width: 100%;
+    background-color: #134a37;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.flex-header-index{
+    display: flex;
+    flex-direction: column;
+}
+
+header div div{
+    background-color: #e1eedd;
+}
+
+header div p{
+    display: inline;
+}
+
+header div i{
+    display: inline;
+}
+
+header div nav{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #e1eedd;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+header div nav a{
+    list-style: none;
+    text-decoration: none;
+    background-color: #e1eedd;
+    margin: 10px;
+}
+
+/*Estilo de main*/
+
+.grid-main-index{
+    background-color: #F4F0E4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 120px);
+    grid-template-areas: "logo logo logo logo"
+                         "img1 img1 img2 img2"
+                         "img1 img1 img2 img2"
+                         "img1 img1 img2 img2"
+                         "img1 img1 img2 img2"
+    ;
+}
+
+.logo{
+    grid-area: logo;
+    background-color:#F4F0E4;
+    background-image: url(../Images/Logo-01\(2\).png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 5px;
+}
+
+.img1{
+    grid-area: img1;
+    background-image: url(../Images/Cookies.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
+
+.img2{
+    grid-area: img2;
+    background-image: url(../Images/s3.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
+
+.grid-main-contacto{
+    background-color: #F4F0E4;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 120px);
+    grid-template-areas: "logo"
+                            "form"
+                            "form"
+    ;
+}
+
+.form-contacto{
+    grid-area: form;
+    align-items: center;
+}
+
+legend{
+    position:relative;
+}
+
+.grid-main-nuestrosservicios{
+    background-color: #F4F0E4;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 120px);
+    grid-template-areas: "logo"
+                            "ser1"
+                            "ser2"
+                            "ser3"
+    ;
+}
+
+.ser1{
+    text-align: center;
+    background-image:url(../Images/eventos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+.ser2{
+    text-align: center;
+    background-image: url(../Images/capacitaciones.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+.ser3{
+    text-align: center;
+    background-image: url(../Images/regalos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+.grid-main-quienessomos{
+    background-color: #F4F0E4;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 120px);
+    grid-template-areas: "logo"
+                            "qui1"
+                            "qui2"
+                            "qui3"
+    ;
+}
+
+.qui1, .qui2, .qui3{
+    margin: 40px;
+}
+
+@media only screen and (min-width: 505px) and (max-width:599px){
+    .grid-main-index{
+        grid-template-rows: repeat(5, 180px);
+    }
+
+    .tamaño1{
+        font-size: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .grid-main-index{
+        grid-template-rows: repeat(5, 190px);
+    }
+
+    .tamaño1{
+        font-size: 110%;
+    }
+}
+
+/*Estilo de footer*/
+
+.grid-footer-index{
+    height: 200px;
+    width: 100%;
+    background-color: #134a37;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "emp emp emp"
+                         "sec1 sec2 sec3"
+                         "sec1 sec2 sec3"
+}
+
+.sec1{
+    grid-area: sec1;
+    display: inline;
+    background-color: #e1eedd;
+}
+
+.sec2{
+    grid-area: sec2;
+    display: inline;
+    background-color: #e1eedd;
+}
+
+.sec3{
+    grid-area: sec3;
+    display: inline;
+    background-color: #e1eedd;
+}
+
+.agrandar-iconos{
+    font-size: 200%;
+}
+
+/*Estilos varios*/
+
+.links-sin-formato{
+    text-decoration: none;
+    color: black;
+}
+
+span{
+    font-weight: bolder;
+    font-size: large;
+}
+
+.titulo2{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #134a37;
+}
