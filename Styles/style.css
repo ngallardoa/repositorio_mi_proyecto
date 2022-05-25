@@ -85,6 +85,11 @@ header div nav a{
     background-size: cover;
     background-position: center;
     margin: 5px;
+    transition: 2s;
+}
+
+.img1:hover{
+    margin: 30px;
 }
 
 .img2{
@@ -93,6 +98,11 @@ header div nav a{
     background-size: cover;
     background-position: center;
     margin: 5px;
+    transition: 2s;
+}
+
+.img2:hover{
+    margin: 30px;
 }
 
 .grid-main-contacto{
